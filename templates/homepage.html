@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <img src="{{url_for('static', filename='image/camiseta.jpg')}}" alt="camiseta">
+</head>
+<body>
+    <main class="container">
+
+    <div class="right-column">
+        <div class="descricao-produto">
+            <span>Camisa Lisa Branca</span>
+            <p>camiseta é feita com um tecido de alta qualidade que garante durabilidade e resistência, além de ser suave e confortável para a pele.</p>
+        </div>
+
+        <div class="preco">
+            <p>Preço: R$259,99</p>    
+        </div>
+        <a href={{ link_pagamento }} class="btn-compra">Compre aqui</a>
+    </div>
+    </main>
+</body>
+</html>
